@@ -1,0 +1,132 @@
+.filtro-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.filtro-form input,
+.filtro-form select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #2b2b2b;
+    color: #fff;
+}
+
+.filtro-form input:focus,
+.filtro-form select:focus {
+    outline: 1px solid #1934bd;
+}
+
+.filtro-form button {
+    width: 100%;
+    padding: 12px;
+    background: #1934bd;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filtro-form button:hover {
+    background: #132ca8;
+}
+
+.acao-topo {
+    margin-bottom: 20px;
+}
+
+.acao-topo a {
+    display: inline-block;
+    text-decoration: none;
+    background: #1934bd;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+
+.acao-topo a:hover {
+    background: #132ca8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #181818;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+th {
+    background: #232323;
+    color: #ffffff;
+}
+
+tr:hover {
+    background: #202020;
+}
+
+.acoes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.acoes a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    background: #1934bd;
+}
+
+.acoes a:hover {
+    background: #132ca8;
+}
+
+.lista-simples {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lista-simples li {
+    background: #181818;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.paginacao {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.paginacao a {
+    text-decoration: none;
+    background: #1934bd;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.paginacao a:hover {
+    background: #132ca8;
+}

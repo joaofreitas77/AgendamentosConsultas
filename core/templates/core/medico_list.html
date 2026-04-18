@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/lista.css' %}">
+{% endblock %}
+
+{% block content %}
+<h2 class="texto">Médicos</h2>
+
+{% if perms.core.add_medico %}
+<div class="acao-topo">
+    <a href="{% url 'medico_create' %}">Novo Médico</a>
+</div>
+{% endif %}
+
+<ul class="lista-simples">
+    {% for medico in medicos %}
+        <li>
+            <span>{{ medico.nome }} - {{ medico.especialidade }}</span>
+
+            <div class="acoes">
+                {% if perms.core.change_medico %}
+                    <a href="{% url 'medico_update' medico.pk %}">Editar</a>
+                {% endif %}
+                {% if perms.core.delete_medico %}
+                    <a href="{% url 'medico_delete' medico.pk %}">Excluir</a>
+                {% endif %}
+            </div>
+        </li>
+    {% empty %}
+        <li>Nenhum médico cadastrado.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

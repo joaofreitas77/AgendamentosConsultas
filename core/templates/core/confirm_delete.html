@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/delete.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="delete-box">
+    <h2 class="texto">Confirmar exclusão</h2>
+
+    <p>Tem certeza que deseja excluir este item?</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Excluir</button>
+    </form>
+
+    <div class="cancelar">
+        <a href="javascript:history.back()">Cancelar</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Agendamento de Consultas</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+    {% if user.is_authenticated %}
+    <header class="topo">
+        <div class="topo-conteudo">
+            <div class="topo-esquerda">
+                <h1>Sistema de Agendamento de Consultas</h1>
+                <p>Olá, {{ user.username }}</p>
+            </div>
+
+            <form method="post" action="{% url 'logout' %}" class="logout-form">
+                {% csrf_token %}
+                <button type="submit" class="logout-btn">Sair</button>
+            </form>
+        </div>
+
+        <nav class="menu">
+            <a href="{% url 'consulta_list' %}">Consultas</a>
+            <a href="{% url 'paciente_list' %}">Pacientes</a>
+            <a href="{% url 'medico_list' %}">Médicos</a>
+        </nav>
+    </header>
+    {% endif %}
+
+    <main class="conteudo">
+        <section class="card">
+            {% block content %}{% endblock %}
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.delete-box {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.delete-box p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.delete-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.delete-box button {
+    width: 100%;
+    padding: 12px;
+    background: #c62828;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete-box button:hover {
+    background: #a91f1f;
+}
+
+.cancelar a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #8aa0ff;
+}
