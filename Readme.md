@@ -1,16 +1,16 @@
-# 🏥 Sistema de Agendamento de Consultas
+# Sistema de Agendamento de Consultas
 
 Projeto desenvolvido com Django para gerenciamento de consultas médicas, permitindo o cadastro de pacientes, médicos e agendamentos, com controle de acesso e autenticação de usuários.
 
 ---
 
-## 📌 Objetivo
+## Objetivo
 
 O sistema tem como objetivo facilitar o agendamento e gerenciamento de consultas em um contexto de saúde, permitindo organizar atendimentos de forma prática e segura.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Python
 - Django (Class-Based Views)
@@ -21,7 +21,7 @@ O sistema tem como objetivo facilitar o agendamento e gerenciamento de consultas
 
 ---
 
-## 🧱 Arquitetura
+## Arquitetura
 
 O projeto segue o padrão **MVT (Model-View-Template)** do Django.
 
@@ -31,23 +31,23 @@ O projeto segue o padrão **MVT (Model-View-Template)** do Django.
 
 ---
 
-## 📊 Models
+## Models
 
 O sistema possui 3 modelos principais:
 
-### 👤 Paciente
+### Paciente
 - nome
 - cpf
 - telefone
 - email
 
-### 🩺 Médico
+### Médico
 - nome
 - especialidade
 - crm
 - email
 
-### 📅 Consulta
+### Consulta
 - paciente (ForeignKey)
 - médico (ForeignKey)
 - data
@@ -57,7 +57,7 @@ O sistema possui 3 modelos principais:
 
 ---
 
-## 🔗 Relacionamentos
+## Relacionamentos
 
 - Um paciente pode ter várias consultas
 - Um médico pode atender várias consultas
@@ -65,7 +65,7 @@ O sistema possui 3 modelos principais:
 
 ---
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
 - Login e logout de usuários
 - Controle de permissões
@@ -83,7 +83,7 @@ O sistema possui 3 modelos principais:
 
 ---
 
-## 🔐 Autenticação e Autorização
+## Autenticação e Autorização
 
 - Sistema de login/logout com Django
 - Uso de:
@@ -96,10 +96,9 @@ O sistema possui 3 modelos principais:
 
 ---
 
-## 🧠 Uso da ORM
+## Equipe
 
-A ORM do Django foi utilizada para:
-
-- Filtros:
-  ```python
-  filter()
+- João Pedro
+- Pablo Haimar
+- Samuel Leite
+- Marco Antônio
