@@ -16,7 +16,7 @@ O sistema tem como objetivo facilitar o agendamento e gerenciamento de consultas
 - Django (Class-Based Views)
 - PostgreSQL
 - HTML
-- CSS (tema escuro)
+- CSS
 - ORM do Django
 
 ---
